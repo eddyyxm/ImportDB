@@ -48,7 +48,7 @@ public class ReadXL {
         	// 创建对Excel工作簿文件的引用
             HSSFWorkbook workbook = new HSSFWorkbook(new FileInputStream(fileToBeRead));
             // 获取sheet1
-            HSSFSheet sheet = workbook.getSheet("Sheet3");
+            HSSFSheet sheet = workbook.getSheet("Sheet4");
             // 循环行
             
             for (int rowNum = 0; rowNum <= sheet.getLastRowNum(); rowNum++) {
