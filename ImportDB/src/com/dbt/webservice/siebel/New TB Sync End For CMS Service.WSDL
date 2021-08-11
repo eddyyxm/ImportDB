@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions
+ xmlns="http://schemas.xmlsoap.org/wsdl/"
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+ targetNamespace="http://siebel.com/CustomUI"
+ xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:tns="http://siebel.com/CustomUI"
+><types
+><xsd:schema
+ elementFormDefault="qualified"
+ attributeFormDefault="unqualified"
+ targetNamespace="http://siebel.com/CustomUI"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+><xsd:element
+ name="NewRouteForCMS_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="ROUTEDESC"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ROUTENAME"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ROUTESTATUS"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="GRIDKEY"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="NewRouteForCMS_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="ACTION_FLAG"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="MESSAGE"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ROUTE_CODE"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ROUTE_ID"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="NewEndForCMS_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="CONTACT"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SEQUENCE"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="NAME"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="COUNTRY_ID"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="H_VOLUME"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="CYCLE"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SELL_CHANNELS"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="CITY_ID"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="TERM_TYPE"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="STATUS"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="MAIN_CHANNELS"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="M_VOLUME"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ADDRESS"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="MOBILEPHONE"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="MINOR_CHANNELS"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="AREA"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="L_VOLUME"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="LINE_ID"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PROV_ID"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="NewEndForCMS_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="ACTION_FLAG"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="END_CODE"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="MESSAGE"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SIEBEL_ID"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="NewGridForCMS_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="GRIDNAME"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="GRIDSTATUS"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="AREAID"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="NewGridForCMS_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="ACTION_FLAG"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="GRID_CODE"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="GRID_ID"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="MESSAGE"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+></xsd:schema
+></types
+><message
+ name="NewRouteForCMS_Input"
+><part
+ name="NewRouteForCMS_Input"
+ element="tns:NewRouteForCMS_Input"
+></part
+></message
+><message
+ name="NewRouteForCMS_Output"
+><part
+ name="NewRouteForCMS_Output"
+ element="tns:NewRouteForCMS_Output"
+></part
+></message
+><message
+ name="NewEndForCMS_Input"
+><part
+ name="NewEndForCMS_Input"
+ element="tns:NewEndForCMS_Input"
+></part
+></message
+><message
+ name="NewEndForCMS_Output"
+><part
+ name="NewEndForCMS_Output"
+ element="tns:NewEndForCMS_Output"
+></part
+></message
+><message
+ name="NewGridForCMS_Input"
+><part
+ name="NewGridForCMS_Input"
+ element="tns:NewGridForCMS_Input"
+></part
+></message
+><message
+ name="NewGridForCMS_Output"
+><part
+ name="NewGridForCMS_Output"
+ element="tns:NewGridForCMS_Output"
+></part
+></message
+><portType
+ name="TB_spcSync_spcEnd_spcFor_spcCMS_spcService"
+><operation
+ name="NewRouteForCMS"
+><input
+ message="tns:NewRouteForCMS_Input"
+></input
+><output
+ message="tns:NewRouteForCMS_Output"
+></output
+></operation
+><operation
+ name="NewEndForCMS"
+><input
+ message="tns:NewEndForCMS_Input"
+></input
+><output
+ message="tns:NewEndForCMS_Output"
+></output
+></operation
+><operation
+ name="NewGridForCMS"
+><input
+ message="tns:NewGridForCMS_Input"
+></input
+><output
+ message="tns:NewGridForCMS_Output"
+></output
+></operation
+></portType
+><binding
+ name="TB_spcSync_spcEnd_spcFor_spcCMS_spcService"
+ type="tns:TB_spcSync_spcEnd_spcFor_spcCMS_spcService"
+><soap:binding
+ transport="http://schemas.xmlsoap.org/soap/http"
+ style="document"
+></soap:binding
+><operation
+ name="NewRouteForCMS"
+><soap:operation
+ soapAction="document/http://siebel.com/CustomUI:NewRouteForCMS"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="NewEndForCMS"
+><soap:operation
+ soapAction="document/http://siebel.com/CustomUI:NewEndForCMS"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="NewGridForCMS"
+><soap:operation
+ soapAction="document/http://siebel.com/CustomUI:NewGridForCMS"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+></binding
+><service
+ name="TB_spcSync_spcEnd_spcFor_spcCMS_spcService"
+><port
+ binding="tns:TB_spcSync_spcEnd_spcFor_spcCMS_spcService"
+ name="TB_spcSync_spcEnd_spcFor_spcCMS_spcService"
+><soap:address
+ location="http://172.16.2.172:7780/eai_chs/start.swe?SWEExtSource=WebService&amp;SWEExtCmd=Execute&amp;UserName=GUESTCST&amp;Password=GUESTCST1"
+></soap:address
+></port
+></service
+></definitions
+>
